@@ -1,0 +1,22 @@
+{
+  "name": "student-account-management",
+  "version": "1.0.0",
+  "description": "Student Account Management System - Node.js Port of COBOL Application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --inspect-brk index.js"
+  },
+  "keywords": [
+    "account",
+    "management",
+    "banking",
+    "balance"
+  ],
+  "author": "COBOL Migration",
+  "license": "MIT",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {}
+}
