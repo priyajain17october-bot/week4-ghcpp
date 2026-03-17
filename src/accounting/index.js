@@ -200,9 +200,19 @@ class MainProgram {
   }
 }
 
+// Export classes for testing
+module.exports = {
+  DataLayer,
+  Operations,
+  MainProgram
+};
+
 /**
  * Application Entry Point
  * Initializes main program and starts the interactive menu loop
+ * Only runs if this file is executed directly (not imported for testing)
  */
-const mainProgram = new MainProgram();
-mainProgram.run();
+if (require.main === module) {
+  const mainProgram = new MainProgram();
+  mainProgram.run();
+}

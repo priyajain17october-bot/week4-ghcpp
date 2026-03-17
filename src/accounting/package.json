@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "node --inspect-brk index.js"
+    "dev": "node --inspect-brk index.js",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "keywords": [
     "account",
@@ -18,5 +20,16 @@
   "dependencies": {
     "prompt-sync": "^4.2.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "coverageDirectory": "coverage",
+    "collectCoverageFrom": [
+      "index.js",
+      "!node_modules/"
+    ]
+  }
 }
